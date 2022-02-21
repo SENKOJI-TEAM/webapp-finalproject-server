@@ -58,6 +58,7 @@ The three entities have the following CRUD operations:
 
 ## TECH STACK
 This project uses **MERN** Stack for implementation.
+> MERN = MongoDB, Express, React, Node
 > Front-end : React.js <br />
 > Back-end : Express.js
 
