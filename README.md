@@ -5,9 +5,13 @@ ID : CSX4107 <br />
 Name : Web Application Development <br />
 Assignment : Final Project
 
+----------------------------------------------------
+
 ## TEAM MEMBERS 
 - SUTISAN NILRATTANAKUL (6213221) <br />
 - WANITCHA SRITHONGCHUAY (6213365) 
+
+----------------------------------------------------
 
 ## PROJECT DESCRIPTION
 ### ENTITIES
@@ -18,8 +22,11 @@ Assignment : Final Project
 3. Donator/Supporter
    > can check for current needed items and choose to donate any listed items to be distributed by the admin.
 
+<br /> ----------------------------
+
 ### DATABASE
 
+<br /> ----------------------------
 
 ### FUNTIONALITIES
 The three entities have the following CRUD operations:
@@ -28,18 +35,26 @@ The three entities have the following CRUD operations:
 1. **Admin/Distributor** <br />
    can..
    - check requested items (GET)
-   - check for donation (GET)
-   - remove accepted donation from donators (DELETE) 
+   - check for donation requests (GET)
+   - update requested items (PUT, PATCH)
+   - remove donation requests after receiving donated items (DELETE) 
+     > *donation acceptance is done outside the system*
    - remove requested items after success distribution to receivers (DELETE) <br />
-     *note: item distribution is done outside the system*
-2. **Receiver/Requester**
+     > *item distribution is done outside the system*
+2. **Receiver/Requester** <br />
    can..
    - request for items (POST)
-   - update requested items ()
+   - update requested items (PUT, PATCH)
    - check for receiving progress (GET)
-3. **Donator/Supporter**
-   - Check for requested items ()
-   - Donate items
+   - remove requested items (DELETE)
+3. **Donator/Supporter** <br />
+   can..
+   - check for requested items (GET)
+   - request to donate items (POST)
+   - update donation (PUT, PATCH)
+   - cancel donation (DELETE)
+
+----------------------------------------------------
 
 ## TECH STACK
 This project uses **MERN** Stack for implementation.
@@ -47,6 +62,7 @@ This project uses **MERN** Stack for implementation.
 > Back-end : Express.js
 
 1. **Tools**
+2. 
    
 
 
