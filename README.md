@@ -24,7 +24,7 @@ Assignment : Final Project
 
 <br /> ----------------------------
 
-### DATABASE
+### DATABASE MODEL
 
 <br /> ----------------------------
 
@@ -58,11 +58,11 @@ The three entities have the following CRUD operations:
 
 ## TECH STACK
 This project uses **MERN** Stack for implementation.
-> MERN = MongoDB, Express, React, Node
+> MERN = MongoDB, Express, React, Node <br />
 > Front-end : React.js <br />
 > Back-end : Express.js
 
-Please make sure you have installed the following dependencies:
+First, please make sure you have installed the followings:
 - Node.js (JavaScript Run-time) <br />
   https://nodejs.org/en/download/
   
@@ -74,11 +74,16 @@ Please make sure you have installed the following dependencies:
     ```
     yarn --version
     ```
-    
+
 How to run this App?
 1. **Back-end**
-   
+   ```
+    yarn dev
+    ```
 2. **Front-end**
-   
+   ```
+    yarn start
+    
+    ```
 
 
