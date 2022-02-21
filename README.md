@@ -10,11 +10,11 @@ Assignment : Final Project
 - WANITCHA SRITHONGCHUAY (6213365) 
 
 ## PROJECT DESCRIPTION
-### Entities
+### ENTITIES
 1. Admin/Distributor (i.e., Charity Foundation)
 2. Donator/Supporter
 3. Receiver (i.e., Assistance Foundation) 
-### Functionalities
+### FUNTIONALITIES
 The three entities have the following CRUD operations:
 1. Admin/Distributor
 2. Donator/Supporter
