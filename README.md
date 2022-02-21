@@ -1,4 +1,4 @@
-# PROJECT NAME (Server)
+# SMILE GIVERS APP (Server)
 
 ## Course Info
 ID : CSX4107 <br />
