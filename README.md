@@ -83,7 +83,4 @@ How to run this App?
 2. **Front-end**
    ```
     yarn start
-    
     ```
-
-
