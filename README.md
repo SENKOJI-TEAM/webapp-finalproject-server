@@ -14,6 +14,7 @@ Assignment : Final Project
 1. Admin/Distributor (i.e., Charity Foundation)
 2. Donator/Supporter
 3. Receiver (i.e., Assistance Foundation) 
+
 ### FUNTIONALITIES
 The three entities have the following CRUD operations:
 1. Admin/Distributor
