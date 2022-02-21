@@ -21,7 +21,7 @@ This application is used to manage item donation requesting process with regards
 1. Admin/Distributor 
    > acts as the site administrator who is responsible for managing the item and donation requests. (i.e., Charity Foundation)
 2. Donator/Supporter
-   > can check for current needed items and choose to donate any listed items.
+   > can check for current needed items and choose to donate any listed items in a desired quantity.
 
 ### ENTITIES
 1. User (Admin)
