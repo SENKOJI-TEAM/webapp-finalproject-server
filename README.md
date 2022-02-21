@@ -15,7 +15,7 @@ Assignment : Final Project
 ----------------------------------------------------
 
 ## PROJECT DESCRIPTION
-This application is used to manage item donation requesting process with regards the needed items posted by the admin. Users are divided into admin and donator. The app allows the admin to post and update the list of items which is currently in short supply and allows the donator to make a donation request as per those items listed. Note that the process of sending and receiving items will be done outside the system. Only the requesting process of item shortage and item donation are to be supported.
+This application is used to manage item donation requesting process with regards the needed items posted by the admin. Users are divided into admin and donator. The app allows the admin to post and update the list of items which is currently in short supply and allows the donator to make a donation request as per those items listed. Note that the process of sending and receiving items will be done outside the system. Only the requesting process of item shortage and item donation are to be supported by the app.
 
 ### STAKEHOLDERS
 1. Admin/Distributor 
@@ -24,9 +24,19 @@ This application is used to manage item donation requesting process with regards
    > can check for current needed items and choose to donate any listed items.
 
 ### ENTITIES
-1. User
+1. User (Admin)
+   - username
+   - password
+   - email
+   - phone
 2. Item
+   - name
+   - quantity
 3. Request
+   - itemName
+   - quantity
+   - donatorName
+   - contactNo
 
 ### FUNTIONALITIES
 > CRUD = CREATE, READ, UPDATE, DELETE <br />
