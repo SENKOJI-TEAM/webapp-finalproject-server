@@ -87,10 +87,12 @@ How to run this App?
    ```
    yarn start
    ```
-   Now, the shell will ask to switch port because it's busy.
-   Here, type 'Y'.
+   Now, the shell will ask to switch port because it's currently in use.
    ```
    ? Something is already running on port 3000.
    Would you like to run the app on another port instead? » (Y/n) 
-   » Y
+   ```
+   Here, type 'Y' to proceed.
+   ```
+   Y
    ```
