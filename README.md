@@ -82,8 +82,15 @@ How to run this App?
 1. **Back-end**
    ```
     yarn dev
-    ```
+   ```
 2. **Front-end**
    ```
-    yarn start
-    ```
+   yarn start
+   ```
+   Now, the shell will ask to switch port because it's busy.
+   Here, type 'Y'.
+   ```
+   ? Something is already running on port 3000.
+   Would you like to run the app on another port instead? » (Y/n) 
+   » Y
+   ```
