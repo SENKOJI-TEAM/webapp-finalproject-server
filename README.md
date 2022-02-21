@@ -29,8 +29,8 @@ The three entities have the following CRUD operations:
    can..
    - check requested items (GET)
    - check for donation (GET)
-   - remove accepted donation from donators (DELETE) <br />
-   - remove requested items after success distribution to receivers (DELETE)
+   - remove accepted donation from donators (DELETE) 
+   - remove requested items after success distribution to receivers (DELETE) <br />
      *note: item distribution is done outside the system*
 2. **Receiver/Requester**
    can..
