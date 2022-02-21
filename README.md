@@ -14,21 +14,21 @@ Assignment : Final Project
 1. Admin/Distributor 
 > acts as the site administrators who is/are responsible for managing and distributing the donated items from donators to receivers. (i.e., Charity Foundation)
 2. Receiver/Requester  
-> can request for needed items and check for progress. (i.e., Assistance Foundation)
+> can request for needed items and check for receiving progress. (i.e., Assistance Foundation)
 3. Donator/Supporter
-> can check for needed items and choose to donate any listed items to be distributed by the admin.
+> can check for current needed items and choose to donate any listed items to be distributed by the admin.
 
 ### FUNTIONALITIES
 The three entities have the following CRUD operations:
 1. Admin/Distributor
-- MANAGE items to be donated/requested items
-- DISTRIBUTE items to receivers
+ - MANAGE items to be donated/requested items
+ - DISTRIBUTE items to receivers
 2. Receiver/Requester
-- REQUEST for items
-- CHECK for progress
+ - REQUEST for items
+ - CHECK for progress
 3. Donator/Supporter
-- CHECK for requested items
-- DONATE items
+ - CHECK for requested items
+ - DONATE items
 
 ## TECH STACK
 This project uses **MERN** Stack for implementation.
