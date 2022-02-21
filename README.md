@@ -14,19 +14,16 @@ Assignment : Final Project
 ----------------------------------------------------
 
 ## PROJECT DESCRIPTION
-### ENTITIES
+### STAKEHOLDERS
 1. Admin/Distributor 
-   > acts as the site administrators who is/are responsible for managing and distributing the donated items from donators to receivers. (i.e., Charity Foundation)
-2. Receiver/Requester  
-   > can request for needed items and check for receiving progress. (i.e., Assistance Foundation)
-3. Donator/Supporter
-   > can check for current needed items and choose to donate any listed items to be distributed by the admin.
+   > acts as the site administrators who is/are responsible for managing the requested items and donation requests. (i.e., Charity Foundation)
+2. Donator/Supporter
+   > can check for current needed items and choose to donate any listed items.
 
-<br /> ----------------------------
-
-### DATABASE MODEL
-
-<br /> ----------------------------
+### ENTITIES
+1. User
+2. Item
+3. DonationRequest
 
 ### FUNTIONALITIES
 The three entities have the following CRUD operations:
@@ -34,22 +31,16 @@ The three entities have the following CRUD operations:
 > Rest API = GET, POST, PUT, PATCH, DELETE
 1. **Admin/Distributor** <br />
    can..
-   - check requested items (GET)
+   - add needed items (POST)
+   - update items (PUT, PATCH)
    - check for donation requests (GET)
-   - update requested items (PUT, PATCH)
+   - remove needed items after success distribution (DELETE) <br />
+     > *item distribution is done outside the system*
    - remove donation requests after receiving donated items (DELETE) 
      > *donation acceptance is done outside the system*
-   - remove requested items after success distribution to receivers (DELETE) <br />
-     > *item distribution is done outside the system*
-2. **Receiver/Requester** <br />
+2. **Donator/Supporter** <br />
    can..
-   - request for items (POST)
-   - update requested items (PUT, PATCH)
-   - check for receiving progress (GET)
-   - remove requested items (DELETE)
-3. **Donator/Supporter** <br />
-   can..
-   - check for requested items (GET)
+   - check for needed items (GET)
    - request to donate items (POST)
    - update donation (PUT, PATCH)
    - cancel donation (DELETE)
