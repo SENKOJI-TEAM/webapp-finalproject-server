@@ -2,7 +2,7 @@
 
 ## COURSE INFO
 ID : CSX4107 <br />
-Name : Wep Application Development <br />
+Name : Web Application Development <br />
 Assignment : Final Project
 
 ## TEAM MEMBERS 
@@ -20,14 +20,19 @@ Assignment : Final Project
 
 ### FUNTIONALITIES
 The three entities have the following CRUD operations:
-> CRUD = CREATE, READ, UPDATE, DELETE
-1. **Admin/Distributor**
-   - Manage items to be donated/requested items
-   - Distribute items to receivers
-2. Receiver/Requester
-   - Request for items ()
-   - Check for progress ()
-3. Donator/Supporter
+> CRUD = CREATE, READ, UPDATE, DELETE <br />
+> Rest API = GET, POST, PUT, PATCH, DELETE
+1. **Admin/Distributor** <br />
+   can..
+   - check requested items (GET)
+   - update items (PUT, PATCH)
+   - remove items after success distribution (DELETE) *distribution is done outside the system*
+2. **Receiver/Requester**
+   can..
+   - request for items (POST)
+   - update items to be received
+   - check for receiving progress (GET)
+3. **Donator/Supporter**
    - Check for requested items ()
    - Donate items
 
