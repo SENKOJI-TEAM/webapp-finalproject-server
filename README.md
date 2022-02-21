@@ -1,9 +1,9 @@
 # PROJECT NAME (Server)
 
-## Course
-ID: CSX4107
-Name: Wep Application Development 
-Assignment: Final Project
+## Course Info
+ID: CSX4107\
+Name: Wep Application Development\ 
+Assignment: Final Project\
 
 ## Team Members
 1. SUTISAN NILRATTANAKUL (6213221)
