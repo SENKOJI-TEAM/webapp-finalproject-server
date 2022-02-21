@@ -18,6 +18,9 @@ Assignment : Final Project
 3. Donator/Supporter
    > can check for current needed items and choose to donate any listed items to be distributed by the admin.
 
+### DATABASE
+
+
 ### FUNTIONALITIES
 The three entities have the following CRUD operations:
 > CRUD = CREATE, READ, UPDATE, DELETE <br />
@@ -25,12 +28,14 @@ The three entities have the following CRUD operations:
 1. **Admin/Distributor** <br />
    can..
    - check requested items (GET)
-   - update items (PUT, PATCH)
-   - remove items after success distribution (DELETE) *distribution is done outside the system*
+   - check for donation (GET)
+   - remove accepted donation from donators (DELETE) <br />
+   - remove requested items after success distribution to receivers (DELETE)
+     *note: item distribution is done outside the system*
 2. **Receiver/Requester**
    can..
    - request for items (POST)
-   - update items to be received
+   - update requested items ()
    - check for receiving progress (GET)
 3. **Donator/Supporter**
    - Check for requested items ()
