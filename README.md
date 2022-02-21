@@ -61,8 +61,23 @@ This project uses **MERN** Stack for implementation.
 > Front-end : React.js <br />
 > Back-end : Express.js
 
-1. **Tools**
-2. 
+Please make sure you have installed the following dependencies:
+- Node.js (JavaScript Run-time) <br />
+  https://nodejs.org/en/download/
+  
+- yarn (Package Manager)
+  ```
+  npm install -g yarn
+  ```
+  - Check yarn version
+    ```
+    yarn --version
+    ```
+    
+How to run this App?
+1. **Back-end**
+   
+2. **Front-end**
    
 
 
