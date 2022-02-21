@@ -1,13 +1,12 @@
-# Project Name (Front-end)
+# PROJECT NAME (Server)
 ## CSX4107 Final Project
-### By SENKOJI TEAM
 
-### Team Members
-1. SUTISAN NILRATTANAKUL (6213221)
-2. WANITCHA SRITHONGCHUAY (6213365)
+## TEAM MEMBERS
+1. Sutisan Nilrattanakul (6213221)
+2. Wanitcha Srithongchuay (6213365)
 
-### Project Description
+## PROJECT DESCRIPTION
 ...
 
-### Tech Stack
+## TECH STACK
 ...
