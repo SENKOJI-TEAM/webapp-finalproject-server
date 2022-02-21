@@ -1,6 +1,6 @@
 # SMILE GIVERS APP (Server)
 
-## Course Info
+## COURSE INFO
 ID : CSX4107 <br />
 Name : Wep Application Development <br />
 Assignment : Final Project
