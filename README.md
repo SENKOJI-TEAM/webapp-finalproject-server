@@ -77,8 +77,13 @@ First, please make sure you have installed the followings:
     ```
     yarn --version
     ```
+And, make sure to install the project dependency in both backend and frontend project folders.
+- yarn
+  ```
+  yarn
+  ```
 
-How to run this App?
+HOW TO RUN THIS APP?
 1. **Back-end**
    ```
     yarn dev
@@ -96,3 +101,4 @@ How to run this App?
    ```
    Y
    ```
+   Browse to => localhost:3000
