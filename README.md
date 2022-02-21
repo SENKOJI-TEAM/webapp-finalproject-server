@@ -5,11 +5,11 @@ ID : CSX4107 <br />
 Name : Wep Application Development <br />
 Assignment : Final Project
 
-## Team Members
+## TEAM MEMBERS
 - SUTISAN NILRATTANAKUL (6213221) <br />
 - WANITCHA SRITHONGCHUAY (6213365) 
 
-## Project Description
+## PROJECT DESCRIPTION
 ### Entities
 1. Admin/Distributor (i.e., Charity Foundation)
 2. Donator/Supporter
@@ -20,5 +20,5 @@ The three entities have the following CRUD operations:
 2. Donator/Supporter
 3. Receiver
 
-## Tech Stack
+## TECH STACK
 This project uses **MERN** Stack for implementation.
