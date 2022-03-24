@@ -39,10 +39,15 @@ router.post("/", (req, res, next) => {
   });
 });
 
+router.delete("/:id", (req, res, next) => {
+  // console.log(req.body)
+  // const id = req.body._id;
+  const id = req.params['id'] // use ID from the route parameter
+  // res.status(200).json(req.params)
 
-router.delete("/", (req, res, next) => {
-  const id = req.body._id;
-  console.debug(id);
+  console.log("Delete this id", id)
+  console.debug('Donation ID to delete',id);
+
   Donation.findByIdAndDelete(id, (err, doc) => {
     if (err) {
       console.error("Hey look, Error!", err);
