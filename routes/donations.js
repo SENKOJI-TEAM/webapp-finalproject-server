@@ -1,11 +1,11 @@
 var express = require("express");
 var router = express.Router();
 const mongoose = require("mongoose");
-var Customer = require("../db/models/customers");
+var Donation = require("../db/models/donations");
 
-/* GET customers listing. */
+/* GET donations listing. */
 router.get("/", (req, res, next) => {
-  Customer.find({}, (err, result) => {
+  Donation.find({}, (err, result) => {
     if (err) {
       console.debug("Hey Look! Error", err);
       res.json(err);
@@ -18,19 +18,18 @@ router.get("/", (req, res, next) => {
 
 
 
-// Create new customer
+// Create new donation
 router.post("/", (req, res, next) => {
   console.debug(req.body);
   const data = req.body;
-  const newCustomer = new Customer({
-    name: data.name,
-    address: data.address,
-    dob: data.dob,
-    email: data.email,
-    phone: data.phone
+  const newDonation = new Donation({
+    itemName: data.itemName,
+    quantity: data.quantity,
+    donatorName: data.donatorName,
+    contactNo: data.contactNo
   });
   
-  newCustomer.save((err, newInstance) => {
+  newDonation.save((err, newInstance) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
@@ -44,7 +43,7 @@ router.post("/", (req, res, next) => {
 router.delete("/", (req, res, next) => {
   const id = req.body._id;
   console.debug(id);
-  Customer.findByIdAndDelete(id, (err, doc) => {
+  Donation.findByIdAndDelete(id, (err, doc) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
@@ -57,15 +56,14 @@ router.delete("/", (req, res, next) => {
 router.put("/", async (req, res, next) => {
   console.debug(req.body);
   const data = req.body;
-  var customer1 = await Customer.findOne({ _id: data._id });
-  customer1.name = data.name;
-  customer1.address = data.address;
-  customer1.phone = data.phone;
-  customer1.email = data.email;
-  customer1.dob = data.dob;
+  var donation1 = await Donation.findOne({ _id: data._id });
+  donation1.itemName = data.itemName;
+  donation1.quantity = data.quantity;
+  donation1.donatorName = data.donatorName;
+  donation1.contactNo = data.contactNo;
 
-  await customer1.save();
-  res.status(200).json(customer1);
+  await donation1.save();
+  res.status(200).json(donation1);
 });
 
 module.exports = router;

@@ -1,11 +1,11 @@
 var express = require("express");
 var router = express.Router();
 const mongoose = require("mongoose");
-var Product = require("../db/models/products");
+var Item = require("../db/models/items");
 
-/* GET products listing. */
+/* GET items listing. */
 router.get("/", (req, res, next) => {
-  Product.find({}, (err, result) => {
+  Item.find({}, (err, result) => {
     if (err) {
       console.debug("Hey Look! Error", err);
       res.json(err);
@@ -16,17 +16,15 @@ router.get("/", (req, res, next) => {
   });
 });
 
-// Create new product
+// Create new item
 router.post("/", (req, res, next) => {
   console.debug(req.body);
   const data = req.body;
-  const product1 = new Product({
-    code: data.code,
+  const item1 = new Item({
     name: data.name,
-    price: data.price,
-    remainingStock: data.remainingStock
+    neededAmount: data.neededAmount
   });
-  product1.save((err, newInstance) => {
+  item1.save((err, newInstance) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
@@ -43,9 +41,9 @@ router.delete("/:id", (req, res, next) => {
   // res.status(200).json(req.params)
 
   console.log("Delete this id", id)
-  console.debug('Product ID to delete',id);
+  console.debug('Item ID to delete',id);
 
-  Product.findByIdAndDelete(id, (err, doc) => {
+  Item.findByIdAndDelete(id, (err, doc) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
@@ -66,7 +64,7 @@ router.put("/", async (req, res, next) => {
   // const filter = {_id: data._id};
   // const update = { data };
 
-  Product.findByIdAndUpdate(id, data, (err, doc) => {
+  Item.findByIdAndUpdate(id, data, (err, doc) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
