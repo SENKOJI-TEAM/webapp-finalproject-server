@@ -60,11 +60,22 @@ router.post("/login", (req, res, next) => {
 
   const data = req.body;
 
+  // const foundUser = User.find(
+  //   {email: data.email}, 
+  //   {password: data.password}, (err, result) => {
+  //   if (err){
+  //       console.log(err);
+  //   }
+  //   else{
+  //       res.send(result);
+  //   }
+  // });
+
   const foundUser = User.find(
     (u) => u.email === data.email && u.password === data.password
   );
   
-  console.log(data);
+  console.log("user's data", data);
   console.log(foundUser);
 
   if (foundUser) {
