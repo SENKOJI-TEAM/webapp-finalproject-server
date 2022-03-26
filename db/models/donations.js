@@ -5,10 +5,12 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var DonationSchema = new Schema({
+  code: Number,
   itemName: String,
   quantity: Number,
   donatorName: String,
-  contactNo: String
+  contactNo: String,
+  donationStatus: String
 });
 
 //Export function to create "DonationSchema" model class

@@ -9,9 +9,10 @@ require('./db/db.js')
 
 // Load routers
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var itemsRouter = require('./routes/items');
 var donationsRouter = require('./routes/donations');
+var usersRouter = require('./routes/users');
+var requestsRouter = require('./routes/requests');
 
 var app = express();
 
@@ -29,9 +30,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Plug routers
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/items', itemsRouter);
-app.use('/donations',donationsRouter);
+app.use('/donations', donationsRouter);
+app.use('/users', usersRouter);
+app.use('/requests', requestsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

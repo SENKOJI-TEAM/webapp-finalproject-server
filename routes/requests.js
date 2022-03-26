@@ -1,11 +1,11 @@
 var express = require("express");
 var router = express.Router();
 const mongoose = require("mongoose");
-var Donation = require("../db/models/donations");
+var Request = require("../db/models/requests");
 
-/* GET donations listing. */
+/* GET requests listing. */
 router.get("/", (req, res, next) => {
-  Donation.find({}, (err, result) => {
+  Request.find({}, (err, result) => {
     if (err) {
       console.debug("Hey Look! Error", err);
       res.json(err);
@@ -18,20 +18,18 @@ router.get("/", (req, res, next) => {
 
 
 
-// Create new donation
+// Create new request
 router.post("/", (req, res, next) => {
   console.debug(req.body);
   const data = req.body;
-  const newDonation = new Donation({
-    code: data.code,
-    itemName: data.itemName,
-    quantity: data.quantity,
-    donatorName: data.donatorName,
-    contactNo: data.contactNo,
-    donationStatus: data.donationStatus
+  const newRequest = new Request({
+    type: data.type,
+    requestorName: data.requestorName,
+    donationCode: data.donationCode,
+    requestStatus: data.requestStatus
   });
   
-  newDonation.save((err, newInstance) => {
+  newRequest.save((err, newInstance) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
@@ -48,9 +46,9 @@ router.delete("/:id", (req, res, next) => {
   // res.status(200).json(req.params)
 
   console.log("Delete this id", id)
-  console.debug('Donation ID to delete',id);
+  console.debug('Request ID to delete',id);
 
-  Donation.findByIdAndDelete(id, (err, doc) => {
+  Request.findByIdAndDelete(id, (err, doc) => {
     if (err) {
       console.error("Hey look, Error!", err);
       res.json(err);
@@ -63,16 +61,14 @@ router.delete("/:id", (req, res, next) => {
 router.put("/", async (req, res, next) => {
   console.debug(req.body);
   const data = req.body;
-  var donation1 = await Donation.findOne({ _id: data._id });
-  donation1.code = data.code;
-  donation1.itemName = data.itemName;
-  donation1.quantity = data.quantity;
-  donation1.donatorName = data.donatorName;
-  donation1.contactNo = data.contactNo;
-  donation1.donationStatus = data.donationStatus;
+  var Request1 = await Request.findOne({ _id: data._id });
+    Request1.type = data.type,
+    Request1.requestorName = data.requestorName,
+    Request1.donationCode = data.donationCode,
+    Request1.requestStatus = data.requestStatus
 
-  await donation1.save();
-  res.status(200).json(donation1);
+  await Request1.save();
+  res.status(200).json(Request1);
 });
 
 module.exports = router;
