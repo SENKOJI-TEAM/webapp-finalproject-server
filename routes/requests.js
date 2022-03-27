@@ -26,6 +26,7 @@ router.post("/", (req, res, next) => {
     type: data.type,
     requestorName: data.requestorName,
     donationCode: data.donationCode,
+    detail: data.detail,
     requestStatus: data.requestStatus
   });
   
@@ -65,6 +66,7 @@ router.put("/", async (req, res, next) => {
     Request1.type = data.type,
     Request1.requestorName = data.requestorName,
     Request1.donationCode = data.donationCode,
+    Request1.detail = data.detail,
     Request1.requestStatus = data.requestStatus
 
   await Request1.save();

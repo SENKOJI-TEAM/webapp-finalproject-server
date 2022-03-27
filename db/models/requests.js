@@ -8,6 +8,7 @@ var RequestSchema = new Schema({
   type: String,
   requestorName: String,
   donationCode: String,
+  detail: String,
   requestStatus: String
 });
 
