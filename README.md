@@ -52,7 +52,6 @@ However, log-in system is provided for both stakeholders.
 1. **Admin/Distributor** <br />
    > email: admin@hotmail.com <br />
    > password: adminishere <br />
-   can..
    - add needed items (POST)
    - update needed items (PUT, PATCH)
    - remove needed items after success distribution (DELETE) <br />
@@ -63,7 +62,6 @@ However, log-in system is provided for both stakeholders.
 2. **Donator/Supporter** <br />
    > email: donator@hotmail.com <br />
    > password: donatorishere <br />
-   can..
    - check for needed items (GET)
    - donate items (POST)
    - request to update donation (PUT, PATCH)
