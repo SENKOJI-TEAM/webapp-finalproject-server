@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Smile Givers App' });
+  res.render('index', { title: 'WELCOME TO.. SMILE GIVERS' });
 });
 
 module.exports = router;
